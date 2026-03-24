@@ -1,4 +1,4 @@
-# VASP vdw 泛函替换 CLI 工具
+# VASP-vdw-Tool CLI 工具
 
 用于在命令行中直接修改 INCAR 文件，添加 vdw 泛函校正。
 
@@ -43,7 +43,7 @@ node vasp-vdw.js -i INCAR -t rvv10 -o INCAR_rvv10
 
 ```bash
 # 进入 CLI 目录
-cd examples/vasp-vdw-replacer/cli
+cd examples/VASP-vdw-Tool/cli
 
 # 查看帮助
 node vasp-vdw.js --help

@@ -1,7 +1,7 @@
 @echo off
 chcp 65001 >nul
 echo ==========================================
-echo VASP vdw 泛函替换工具 - 打包脚本
+echo VASP-vdw-Tool - 打包脚本
 echo ==========================================
 echo.
 
@@ -40,12 +40,12 @@ echo.
 echo ==========================================
 echo 打包完成！
 echo 输出目录: dist\
-echo - vasp-vdw-replacer.exe (后端程序)
+echo - vasp-vdw-tool.exe (后端程序)
 echo - public\ (前端静态文件)
 echo ==========================================
 echo.
 echo 使用方法:
-echo 1. 双击运行 dist\vasp-vdw-replacer.exe
+echo 1. 双击运行 dist\vasp-vdw-tool.exe
 echo 2. 浏览器访问 http://localhost:3000
 echo.
 pause

@@ -1,5 +1,5 @@
 ---
-title: 'VASP vdw Replacer: A Tool for Adding van der Waals Correction Functionals to VASP INCAR Files'
+title: 'VASP-vdw-Tool: A Tool for Adding van der Waals Correction Functionals to VASP INCAR Files'
 tags:
   - VASP
   - density functional theory
@@ -26,7 +26,7 @@ VASP (Vienna Ab initio Simulation Package) is one of the most widely used softwa
 
 However, VASP's official documentation for vdW corrections spans two main pages covering 25+ functional methods and 50+ associated parameters. Different functionals require different parameter combinations, making it time-consuming and error-prone for users to manually find and configure the correct settings. This complexity creates a significant barrier for researchers, especially those new to the field.
 
-**VASP vdw Replacer** addresses this challenge by providing a user-friendly tool that automates the process of adding vdW correction functionals to VASP INCAR files. The software supports all major vdW correction methods available in VASP, including:
+**VASP-vdw-Tool** addresses this challenge by providing a user-friendly tool that automates the process of adding vdW correction functionals to VASP INCAR files. The software supports all major vdW correction methods available in VASP, including:
 
 - **IVDW-based methods**: DFT-D2 [@grimme2006semiempirical], DFT-D3 [@grimme2010consistent], DFT-D3(BJ), DFT-D4 [@caldeweyher2019generally], Tkatchenko-Scheffler [@tkatchenko2009accurate], MBD [@ambrosetti2014long], and more
 - **vdW-DF nonlocal functionals**: vdW-DF [@dion2004van], vdW-DF2 [@lee2010higher], optPBE-vdW [@klimes2010van], optB88-vdW, optB86b-vdW, BEEF-vdW [@wellendorff2012density], rev-vdW-DF2, rVV10 [@sabatini2013nonlocal], SCAN+rVV10 [@peng2016versatile], and the latest vdW-DF3 family
@@ -44,7 +44,7 @@ VASP provides extensive support for vdW corrections through various methods, but
 3. **Version dependencies**: Some methods require specific VASP versions (e.g., DFT-D4 requires VASP 6.2+)
 4. **Error-prone manual configuration**: Incorrect parameter combinations can lead to calculation failures or wrong results
 
-Existing tools in the field focus primarily on structure generation, job submission, or post-processing of results. To our knowledge, no dedicated tool exists specifically for managing vdW functional parameters in VASP INCAR files. VASP vdw Replacer fills this gap by providing a centralized, validated, and user-friendly solution.
+Existing tools in the field focus primarily on structure generation, job submission, or post-processing of results. To our knowledge, no dedicated tool exists specifically for managing vdW functional parameters in VASP INCAR files. VASP-vdw-Tool fills this gap by providing a centralized, validated, and user-friendly solution.
 
 The software is particularly valuable for:
 - **New VASP users** who need guidance on vdW functional selection
@@ -56,7 +56,7 @@ The software is particularly valuable for:
 
 ## Core Features
 
-VASP vdw Replacer implements the following key features:
+VASP-vdw-Tool implements the following key features:
 
 ### 1. Comprehensive Functional Support
 
@@ -174,7 +174,7 @@ Tests are implemented using Jest and can be run with `npm test`. All tests pass 
 
 # Availability and Installation
 
-VASP vdw Replacer is open-source software released under the MIT License. The source code is available on GitHub, and the software can be installed via:
+VASP-vdw-Tool is open-source software released under the MIT License. The source code is available on GitHub, and the software can be installed via:
 
 1. **From source**: Clone the repository and run `npm install` in the backend and frontend directories
 2. **Packaged executable**: Download pre-built executables for Windows or Linux

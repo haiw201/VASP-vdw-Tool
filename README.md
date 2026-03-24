@@ -1,4 +1,4 @@
-# VASP vdw Replacer
+# VASP-vdw-Tool
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
@@ -14,7 +14,7 @@ VASP (Vienna Ab initio Simulation Package) is one of the most widely used softwa
 
 However, VASP's official documentation for vdw corrections spans two main pages ([IVDW](https://www.vasp.at/wiki/index.php/IVDW) and [LUSE_VDW](https://www.vasp.at/wiki/index.php/Nonlocal_vdW-DF_functionals)), covering 25+ functional methods and 50+ associated parameters. Different functionals require different parameter combinations, making it time-consuming and error-prone for users to manually find and configure the correct settings.
 
-**VASP vdw Replacer** addresses this challenge by providing:
+**VASP-vdw-Tool** addresses this challenge by providing:
 - **One-stop access** to all 25+ vdw correction methods
 - **Automatic parameter generation** based on VASP official documentation
 - **Multiple interfaces**: Web GUI, CLI tool, and REST API
@@ -42,8 +42,8 @@ However, VASP's official documentation for vdw corrections spans two main pages 
 
 ```bash
 # Clone the repository
-git clone https://github.com/username/vasp-vdw-replacer.git
-cd vasp-vdw-replacer
+git clone https://github.com/haiw201/VASP-vdw-Tool.git
+cd VASP-vdw-Tool
 
 # Install backend dependencies
 cd backend
@@ -111,7 +111,7 @@ npm run build:win
 
 # Run the executable
 cd ../dist
-vasp-vdw-replacer.exe
+vasp-vdw-tool.exe
 
 # Access at http://localhost:3000
 ```
@@ -124,8 +124,8 @@ chmod +x build-linux.sh
 
 # Run the executable
 cd dist
-chmod +x vasp-vdw-replacer
-./vasp-vdw-replacer
+chmod +x vasp-vdw-tool
+./vasp-vdw-tool
 
 # Access at http://localhost:3000
 ```
@@ -212,7 +212,7 @@ IVDW = 11
 ## Project Structure
 
 ```
-vasp-vdw-replacer/
+VASP-vdw-Tool/
 ├── backend/              # Backend server (Express.js)
 │   ├── src/
 │   │   ├── app.js
@@ -260,9 +260,9 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 If you use this software in your research, please cite:
 
 ```bibtex
-@software{vasp_vdw_replacer_2026,
-  author = {Your Name},
-  title = {VASP vdw Replacer: A Tool for Adding van der Waals Correction Functionals to VASP INCAR Files},
+@software{vasp_vdw_tool_2026,
+  author = {haiw201},
+  title = {VASP-vdw-Tool: A Tool for Adding van der Waals Correction Functionals to VASP INCAR Files},
   year = {2026},
   publisher = {Zenodo},
   doi = {10.XXXX/zenodo.XXXXX}
@@ -288,8 +288,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-- GitHub Issues: [https://github.com/username/vasp-vdw-replacer/issues](https://github.com/username/vasp-vdw-replacer/issues)
-- Email: your.email@example.com
+- GitHub Issues: [https://github.com/haiw201/VASP-vdw-Tool/issues](https://github.com/haiw201/VASP-vdw-Tool/issues)
+- Email: hwang@tongji.edu.cn
 
 ---
 

@@ -1,5 +1,5 @@
 {
-  "name": "vasp-vdw-replacer-backend",
+  "name": "vasp-vdw-tool-backend",
   "version": "1.0.0",
   "private": true,
   "bin": "src/app.js",
@@ -8,8 +8,8 @@
     "dev": "node src/app.js",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "build:win": "pkg . --targets node18-win-x64 --output ../dist/vasp-vdw-replacer.exe",
-    "build:linux": "pkg . --targets node18-linux-x64 --output ../dist/vasp-vdw-replacer"
+    "build:win": "pkg . --targets node18-win-x64 --output ../dist/vasp-vdw-tool.exe",
+    "build:linux": "pkg . --targets node18-linux-x64 --output ../dist/vasp-vdw-tool"
   },
   "dependencies": {
     "cors": "^2.8.5",

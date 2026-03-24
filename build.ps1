@@ -1,6 +1,6 @@
-# VASP vdw 泛函替换工具 - 打包脚本
+# VASP-vdw-Tool - 打包脚本
 Write-Host "==========================================" -ForegroundColor Cyan
-Write-Host " VASP vdw 泛函替换工具 - 打包脚本" -ForegroundColor Cyan
+Write-Host " VASP-vdw-Tool - 打包脚本" -ForegroundColor Cyan
 Write-Host "==========================================" -ForegroundColor Cyan
 Write-Host ""
 
@@ -48,7 +48,7 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 # 打包
-pkg . --targets node18-win-x64 --output ../dist/vasp-vdw-replacer.exe
+pkg . --targets node18-win-x64 --output ../dist/vasp-vdw-tool.exe
 if ($LASTEXITCODE -ne 0) {
     Write-Host "后端打包失败！" -ForegroundColor Red
     exit 1
@@ -59,11 +59,11 @@ Write-Host ""
 Write-Host "==========================================" -ForegroundColor Green
 Write-Host " 打包完成！" -ForegroundColor Green
 Write-Host " 输出目录: dist\" -ForegroundColor Green
-Write-Host " - vasp-vdw-replacer.exe (后端程序)" -ForegroundColor Green
+Write-Host " - vasp-vdw-tool.exe (后端程序)" -ForegroundColor Green
 Write-Host " - public\ (前端静态文件)" -ForegroundColor Green
 Write-Host "==========================================" -ForegroundColor Green
 Write-Host ""
 Write-Host "使用方法:" -ForegroundColor Cyan
-Write-Host "1. 双击运行 dist\vasp-vdw-replacer.exe" -ForegroundColor White
+Write-Host "1. 双击运行 dist\vasp-vdw-tool.exe" -ForegroundColor White
 Write-Host "2. 浏览器访问 http://localhost:3000" -ForegroundColor White
 Write-Host ""

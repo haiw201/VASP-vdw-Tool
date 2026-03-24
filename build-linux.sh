@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# VASP vdw 泛函替换工具 - Linux 构建脚本
+# VASP-vdw-Tool - Linux 构建脚本
 
 set -e
 
@@ -32,17 +32,17 @@ cd ..
 
 # 添加执行权限
 echo "[4/4] 添加执行权限..."
-chmod +x dist/vasp-vdw-replacer
+chmod +x dist/vasp-vdw-tool
 
 echo ""
 echo "✅ 构建完成！"
 echo ""
 echo "📦 输出文件:"
-echo "   - 可执行文件: dist/vasp-vdw-replacer"
+echo "   - 可执行文件: dist/vasp-vdw-tool"
 echo "   - 前端文件: dist/public/"
 echo ""
 echo "🚀 运行方式:"
 echo "   cd dist"
-echo "   ./vasp-vdw-replacer"
+echo "   ./vasp-vdw-tool"
 echo ""
 echo "🌐 然后浏览器访问: http://localhost:3000"

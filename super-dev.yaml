@@ -1,4 +1,4 @@
-name: vasp-vdw-replacer
+name: vasp-vdw-tool
 description: VASP INCAR 文件 vdw 泛函添加/替换 Web 应用
 version: 1.0.0
 license: MIT

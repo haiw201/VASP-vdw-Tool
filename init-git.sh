@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Git Initialization Script for VASP vdw Replacer
+# Git Initialization Script for VASP-vdw-Tool
 # Usage: bash init-git.sh
 
 set -e
 
-echo "🔧 Initializing Git repository for VASP vdw Replacer..."
+echo "🔧 Initializing Git repository for VASP-vdw-Tool..."
 
 # Get the directory where the script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -26,7 +26,7 @@ fi
 # Initialize Git repository
 echo "[1/6] Initializing Git repository..."
 git init
-git config user.name "VASP vdw Replacer Contributors"
+git config user.name "VASP-vdw-Tool Contributors"
 git config user.email "contributors@example.com"
 
 # Create .gitignore
@@ -92,7 +92,7 @@ EOF
 # Create initial commit
 echo "[3/6] Creating initial commit..."
 git add .
-git commit -m "Initial commit: VASP vdw Replacer
+git commit -m "Initial commit: VASP-vdw-Tool
 
 Features:
 - Web interface for vdw functional selection
@@ -124,7 +124,7 @@ echo "✅ Git repository initialized successfully!"
 echo ""
 echo "Next steps:"
 echo "1. Create a repository on GitHub"
-echo "2. Add remote: git remote add origin https://github.com/username/vasp-vdw-replacer.git"
+echo "2. Add remote: git remote add origin https://github.com/username/VASP-vdw-Tool.git"
 echo "3. Push: git push -u origin main"
 echo "4. Push develop branch: git push -u origin develop"
 echo ""

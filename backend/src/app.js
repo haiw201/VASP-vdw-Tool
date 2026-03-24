@@ -20,7 +20,7 @@ function findPublicPath() {
     path.join(path.dirname(process.execPath), 'public'),
     path.join(__dirname, '../../../dist/public'),
     path.join(process.cwd(), '../dist/public'),
-    'F:\\20260303ai\\super-dev\\super-dev\\examples\\vasp-vdw-replacer\\dist\\public'
+    'F:\\20260303ai\\super-dev\\super-dev\\examples\\vasp-vdw-tool\\dist\\public'
   ];
 
   for (const p of possiblePaths) {

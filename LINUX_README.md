@@ -1,4 +1,4 @@
-# VASP vdw 泛函替换工具 - Linux 使用指南
+# VASP-vdw-Tool - Linux 使用指南
 
 ## 方法一：直接运行 Node.js（推荐，适合开发）
 
@@ -6,7 +6,7 @@
 
 ```bash
 # 进入项目目录
-cd examples/vasp-vdw-replacer
+cd examples/VASP-vdw-Tool
 
 # 安装后端依赖
 cd backend
@@ -21,13 +21,13 @@ npm install
 
 **终端 1 - 启动后端：**
 ```bash
-cd examples/vasp-vdw-replacer/backend
+cd examples/VASP-vdw-Tool/backend
 npm start
 ```
 
 **终端 2 - 启动前端：**
 ```bash
-cd examples/vasp-vdw-replacer/frontend
+cd examples/VASP-vdw-Tool/frontend
 npm run dev
 ```
 
@@ -42,7 +42,7 @@ npm run dev
 ### 1. 构建前端
 
 ```bash
-cd examples/vasp-vdw-replacer/frontend
+cd examples/VASP-vdw-Tool/frontend
 npm install
 npm run build
 ```
@@ -50,7 +50,7 @@ npm run build
 ### 2. 复制构建文件
 
 ```bash
-cd examples/vasp-vdw-replacer
+cd examples/VASP-vdw-Tool
 rm -rf dist/public
 cp -r frontend/dist dist/public
 ```
@@ -58,7 +58,7 @@ cp -r frontend/dist dist/public
 ### 3. 打包后端
 
 ```bash
-cd examples/vasp-vdw-replacer/backend
+cd examples/VASP-vdw-Tool/backend
 npm install
 npm run build:linux
 ```
@@ -66,9 +66,9 @@ npm run build:linux
 ### 4. 添加执行权限并运行
 
 ```bash
-cd examples/vasp-vdw-replacer/dist
-chmod +x vasp-vdw-replacer
-./vasp-vdw-replacer
+cd examples/VASP-vdw-Tool/dist
+chmod +x vasp-vdw-tool
+./vasp-vdw-tool
 ```
 
 ### 5. 访问应用
@@ -82,7 +82,7 @@ chmod +x vasp-vdw-replacer
 ### 1. 直接使用
 
 ```bash
-cd examples/vasp-vdw-replacer/cli
+cd examples/VASP-vdw-Tool/cli
 
 # 查看帮助
 node vasp-vdw.js --help
@@ -101,7 +101,7 @@ node vasp-vdw.js -i INCAR -t vdw-df2 -o INCAR_vdw
 
 ```bash
 # 创建软链接到 /usr/local/bin
-sudo ln -s $(pwd)/examples/vasp-vdw-replacer/cli/vasp-vdw.js /usr/local/bin/vasp-vdw
+sudo ln -s $(pwd)/examples/VASP-vdw-Tool/cli/vasp-vdw.js /usr/local/bin/vasp-vdw
 
 # 现在可以在任何地方使用
 vasp-vdw --list
@@ -126,7 +126,7 @@ kill -9 <PID>
 
 ```bash
 # 给脚本添加执行权限
-chmod +x vasp-vdw-replacer
+chmod +x vasp-vdw-tool
 chmod +x cli/vasp-vdw.js
 ```
 
@@ -143,7 +143,7 @@ node --version  # 应该显示 v18.x.x 或更高
 ## 文件结构
 
 ```
-examples/vasp-vdw-replacer/
+examples/VASP-vdw-Tool/
 ├── backend/              # 后端代码
 │   ├── src/
 │   │   ├── app.js
@@ -157,7 +157,7 @@ examples/vasp-vdw-replacer/
 │   ├── vasp-vdw.js
 │   └── README.md
 ├── dist/                 # 打包输出目录
-│   ├── vasp-vdw-replacer # Linux 可执行文件
+│   ├── vasp-vdw-tool     # Linux 可执行文件
 │   └── public/           # 前端静态文件
 └── README.md
 ```
@@ -195,11 +195,11 @@ cd ..
 
 # 添加执行权限
 echo "[4/4] 添加执行权限..."
-chmod +x dist/vasp-vdw-replacer
+chmod +x dist/vasp-vdw-tool
 
 echo "✅ 构建完成！"
-echo "可执行文件: dist/vasp-vdw-replacer"
-echo "运行方式: ./dist/vasp-vdw-replacer"
+echo "可执行文件: dist/vasp-vdw-tool"
+echo "运行方式: ./dist/vasp-vdw-tool"
 ```
 
 使用方法：
