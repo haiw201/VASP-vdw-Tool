@@ -1,0 +1,13 @@
+name: vasp-vdw-replacer
+description: VASP INCAR 文件 vdw 泛函添加/替换 Web 应用
+version: 1.0.0
+license: MIT
+
+platform: web
+frontend: react
+backend: node
+
+domain: scientific
+
+quality_gate: 70
+output_dir: output

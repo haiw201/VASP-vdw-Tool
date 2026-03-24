@@ -1,0 +1,16 @@
+SYSTEM = Graphene
+ENCUT = 520
+EDIFF = 1E-6
+ISMEAR = 0
+SIGMA = 0.05
+IBRION = 2
+NSW = 100
+ISIF = 3
+PREC = Accurate
+
+# ===== VASP vdW 泛函校正 =====
+# 类型: IVDW
+# 名称: DFT-D3
+# 说明: Grimme DFT-D3 零阻尼方法 (VASP 5.3.4+)
+
+IVDW = 11

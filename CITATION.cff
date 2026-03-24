@@ -1,0 +1,115 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "VASP vdw Replacer"
+abstract: "A web-based and CLI tool for adding van der Waals correction functionals to VASP INCAR files. Supports 25+ vdw methods including DFT-D2, DFT-D3, DFT-D4, Tkatchenko-Scheffler, MBD, vdW-DF family, and rVV10 family."
+authors:
+  - name: "VASP vdw Replacer Contributors"
+    affiliation: "Computational Materials Science Community"
+repository-code: "https://github.com/username/vasp-vdw-replacer"
+url: "https://github.com/username/vasp-vdw-replacer"
+license: MIT
+version: "1.0.0"
+date-released: "2026-03-24"
+keywords:
+  - vasp
+  - dft
+  - van-der-waals
+  - van-der-waals-correction
+  - computational-materials-science
+  - density-functional-theory
+  - first-principles
+  - incar
+  - vdw-dft
+  - dft-d3
+  - dft-d4
+  - many-body-dispersion
+  - python
+  - materials-science
+  - condensed-matter-physics
+commit: "main"
+doi: "10.XXXX/zenodo.XXXXX"
+
+# Preferred citation
+preferred-citation:
+  type: software
+  title: "VASP vdw Replacer: A Tool for Adding van der Waals Correction Functionals to VASP INCAR Files"
+  authors:
+    - name: "VASP vdw Replacer Contributors"
+  year: 2026
+  publisher: Zenodo
+  doi: "10.XXXX/zenodo.XXXXX"
+  url: "https://github.com/username/vasp-vdw-replacer"
+
+# Related references
+references:
+  - type: book
+    title: "VASP: The Guide"
+    authors:
+      - name: "Hafner, J."
+      - name: "Kresse, G."
+    year: 2023
+    publisher: "VASP Software GmbH"
+    url: "https://www.vasp.at/wiki/index.php/The_VASP_Manual"
+
+  - type: article
+    title: "A consistent and accurate ab initio parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu"
+    authors:
+      - family-names: "Grimme"
+        given-names: "Stefan"
+      - family-names: "Antony"
+        given-names: "Jens"
+      - family-names: "Ehrlich"
+        given-names: "Stefan"
+      - family-names: "Krieg"
+        given-names: "Helge"
+    journal: "The Journal of Chemical Physics"
+    volume: 132
+    issue: 15
+    pages: "154104"
+    year: 2010
+    doi: "10.1063/1.3382344"
+
+  - type: article
+    title: "Van der Waals density functional for general geometries"
+    authors:
+      - family-names: "Dion"
+        given-names: "Max"
+      - family-names: "Rydberg"
+        given-names: "Henrik"
+      - family-names: "Schröder"
+        given-names: "Elsebeth"
+      - family-names: "Langreth"
+        given-names: "David C."
+      - family-names: "Lundqvist"
+        given-names: "Bengt I."
+    journal: "Physical Review Letters"
+    volume: 92
+    issue: 24
+    pages: "246401"
+    year: 2004
+    doi: "10.1103/PhysRevLett.92.246401"
+
+  - type: article
+    title: "van der Waals forces in density functional theory: a review of different vdW-DF approaches"
+    authors:
+      - family-names: "Berland"
+        given-names: "Kristian"
+      - family-names: "Cooper"
+        given-names: "Valentino R."
+      - family-names: "Lee"
+        given-names: "Kyuho"
+      - family-names: "Schröder"
+        given-names: "Elsebeth"
+      - family-names: "Thonhauser"
+        given-names: "T."
+      - family-names: "Hyldgaard"
+        given-names: "Per"
+      - family-names: "Lundqvist"
+        given-names: "Bengt I."
+    journal: "Reports on Progress in Physics"
+    volume: 78
+    issue: 6
+    pages: "066501"
+    year: 2015
+    doi: "10.1088/0034-4885/78/6/066501"
