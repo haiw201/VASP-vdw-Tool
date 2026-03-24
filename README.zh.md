@@ -204,10 +204,12 @@ IVDW = 11
 
 ## 文档
 
+- [贡献指南](CONTRIBUTING.md)
+- [代码规范](docs/code-standards.md)
+- [API 文档](docs/api.md)
 - [Web 界面指南](docs/web-guide.md)
 - [CLI 参考手册](docs/cli-reference.md)
 - [Linux 安装指南](LINUX_README.md)
-- [API 文档](docs/api.md)
 
 ## 项目结构
 

@@ -9,7 +9,7 @@ This document outlines the code standards and best practices for VASP-vdw-Tool.
 3. **Consistency**: Follow existing patterns in the codebase
 4. **Documentation**: Document all public APIs and complex logic
 
----
+***
 
 ## Comments / 注释
 
@@ -35,15 +35,15 @@ function getVdwTypes() { ... }
 
 ### Comment Guidelines
 
-| Situation | Requirement |
-|-----------|-------------|
-| Function definition | Required - describe purpose |
-| Complex logic | Required - explain why |
-| Bug fix | Required - reference issue |
-| Simple code | Optional - avoid obvious comments |
-| API endpoint | Required - describe parameters and response |
+| Situation           | Requirement                                 |
+| ------------------- | ------------------------------------------- |
+| Function definition | Required - describe purpose                 |
+| Complex logic       | Required - explain why                      |
+| Bug fix             | Required - reference issue                  |
+| Simple code         | Optional - avoid obvious comments           |
+| API endpoint        | Required - describe parameters and response |
 
----
+***
 
 ## Naming Conventions
 
@@ -51,7 +51,7 @@ function getVdwTypes() { ... }
 
 - Use **camelCase** for variables and functions
 - Use **PascalCase** for React components
-- Use **UPPER_SNAKE_CASE** for constants
+- Use **UPPER\_SNAKE\_CASE** for constants
 
 **Examples:**
 
@@ -71,7 +71,7 @@ class VaspVdwComponent { ... }  // PascalCase
 - React components: `PascalCase.tsx`
 - Configuration: `kebab-case.json`
 
----
+***
 
 ## Code Style
 
@@ -97,7 +97,7 @@ function example(){
 
 ### Braces
 
-- Use **K&R style** braces (opening brace on same line)
+- Use **K\&R style** braces (opening brace on same line)
 
 ```javascript
 // Good / 好的
@@ -119,7 +119,7 @@ if (condition)
 - Keep lines under **120 characters**
 - Break long strings into multiple lines
 
----
+***
 
 ## Function Design
 
@@ -172,7 +172,7 @@ try {
 }
 ```
 
----
+***
 
 ## JavaScript Specific
 
@@ -214,7 +214,7 @@ const name = vdwConfig.name;
 const type = vdwConfig.type;
 ```
 
----
+***
 
 ## React Components
 
@@ -251,7 +251,7 @@ export default function MyComponent({ title }: Props) {
 - Lift state only when needed
 - Use TypeScript interfaces for state types
 
----
+***
 
 ## Git Commit Messages
 
@@ -286,7 +286,7 @@ docs: Add API documentation
 Document all endpoints with request/response examples.
 ```
 
----
+***
 
 ## Testing Guidelines
 
@@ -304,7 +304,7 @@ describe('parseIncar', () => {
 });
 ```
 
----
+***
 
 ## VASP-specific Standards
 
@@ -334,7 +334,7 @@ When adding a new functional:
 - Use `.TRUE.` and `.FALSE.` for logical values
 - Follow VASP manual exactly
 
----
+***
 
 ## File Organization
 
@@ -363,10 +363,11 @@ vasp-vdw-replacer/
 └── README.md
 ```
 
----
+***
 
 ## Resources
 
 - [JavaScript Style Guide](https://github.com/airbnb/javascript)
 - [React TypeScript Cheatsheet](https://react-typescript-cheatsheet.netlify.app/)
 - [VASP Wiki: IVDW](https://www.vasp.at/wiki/index.php/IVDW)
+

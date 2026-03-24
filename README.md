@@ -204,10 +204,12 @@ IVDW = 11
 
 ## Documentation
 
+- [Contributing Guide](CONTRIBUTING.md)
+- [Code Standards](docs/code-standards.md)
+- [API Documentation](docs/api.md)
 - [Web Interface Guide](docs/web-guide.md)
 - [CLI Reference](docs/cli-reference.md)
 - [Linux Installation](LINUX_README.md)
-- [API Documentation](docs/api.md)
 
 ## Project Structure
 

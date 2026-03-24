@@ -1,5 +1,13 @@
 # VASP-vdw-Tool - Linux 使用指南
 
+## 目录
+
+- [快速开始](#方法一直接运行-nodejs推荐适合开发)
+- [打包部署](#方法二打包成可执行文件适合分发)
+- [CLI 工具](#方法三使用-cli-工具命令行)
+- [常见问题](#常见问题)
+- [参考文档](#参考文档)
+
 ## 方法一：直接运行 Node.js（推荐，适合开发）
 
 ### 1. 安装依赖
@@ -208,3 +216,13 @@ echo "运行方式: ./dist/vasp-vdw-tool"
 chmod +x build-linux.sh
 ./build-linux.sh
 ```
+
+---
+
+## 参考文档
+
+- [主 README](README.md) - 英文完整文档
+- [中文 README](README.zh.md) - 中文完整文档
+- [API 文档](docs/api.md) - REST API 完整文档
+- [代码规范](docs/code-standards.md) - 代码编写规范
+- [贡献指南](../CONTRIBUTING.md) - 如何贡献代码
