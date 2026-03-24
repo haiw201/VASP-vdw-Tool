@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-03-24
+
+### Added
+
+- **CLI Batch Processing** - Enhanced CLI tool with batch processing capabilities:
+  - `-d, --dir` - Process all INCAR files in a directory
+  - `-r, --recursive` - Recursively search subdirectories
+  - `-p, --pattern` - Custom file pattern matching (default: INCAR*)
+  - `--suffix` - Add custom suffix to output files (e.g., "_vdw")
+  - `--dry-run` - Preview mode without actual file modifications
+
+### Changed
+
+- **CLI Tool** - Improved help text and usage examples with bilingual comments
+- **Documentation** - Updated README files with batch processing examples
+
+---
+
 ## [1.0.0] - 2026-03-24
 
 ### Added

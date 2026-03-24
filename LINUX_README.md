@@ -98,11 +98,20 @@ node vasp-vdw.js --help
 # 列出所有可用的 vdw 泛函
 node vasp-vdw.js --list
 
-# 修改 INCAR 文件
+# 单文件修改
 node vasp-vdw.js -i INCAR -t dft-d3
 
-# 修改并保存到新文件
-node vasp-vdw.js -i INCAR -t vdw-df2 -o INCAR_vdw
+# 批量处理
+node vasp-vdw.js -d ./incars -t dft-d3
+
+# 含子目录的批量处理
+node vasp-vdw.js -d ./calculations -t dft-d3 -r
+
+# 预览模式（不实际修改）
+node vasp-vdw.js -d ./incars -t dft-d3 --dry-run
+
+# 修改并添加后缀保存
+node vasp-vdw.js -d ./incars -t dft-d3 --suffix "_vdw"
 ```
 
 ### 2. 添加到系统 PATH（可选）

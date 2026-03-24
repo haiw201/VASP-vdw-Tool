@@ -91,14 +91,19 @@ cd cli
 # 列出所有可用的泛函
 node vasp-vdw.js --list
 
-# 向 INCAR 添加 DFT-D3
+# 单文件修改
 node vasp-vdw.js -i INCAR -t dft-d3
-
-# 添加 vdW-DF2 并保存到新文件
 node vasp-vdw.js -i INCAR -t vdw-df2 -o INCAR_vdw
 
-# 添加 rVV10 泛函
-node vasp-vdw.js -i INCAR -t rvv10 -o INCAR_rvv10
+# 批量处理
+node vasp-vdw.js -d ./incars -t dft-d3
+node vasp-vdw.js -d ./incars -t dft-d3 --suffix "_dftd3"
+
+# 含子目录的批量处理
+node vasp-vdw.js -d ./calculations -t dft-d3 -r
+
+# 预览模式
+node vasp-vdw.js -d ./incars -t dft-d3 --dry-run
 ```
 
 #### 方式 3：打包的可执行文件（无需 Node.js）

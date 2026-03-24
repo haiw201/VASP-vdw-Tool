@@ -1,4 +1,4 @@
-# VASP-vdw-Tool
+# VASP-vdw-Tool v1.1.0
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
@@ -91,14 +91,19 @@ cd cli
 # List all available functionals
 node vasp-vdw.js --list
 
-# Add DFT-D3 to INCAR
+# Single file modification / 单文件修改
 node vasp-vdw.js -i INCAR -t dft-d3
-
-# Add vdW-DF2 and save to new file
 node vasp-vdw.js -i INCAR -t vdw-df2 -o INCAR_vdw
 
-# Add rVV10 functional
-node vasp-vdw.js -i INCAR -t rvv10 -o INCAR_rvv10
+# Batch processing / 批量处理
+node vasp-vdw.js -d ./incars -t dft-d3
+node vasp-vdw.js -d ./incars -t dft-d3 --suffix "_dftd3"
+
+# Batch with subdirectories / 含子目录的批量处理
+node vasp-vdw.js -d ./calculations -t dft-d3 -r
+
+# Preview mode (dry-run) / 预览模式
+node vasp-vdw.js -d ./incars -t dft-d3 --dry-run
 ```
 
 #### Method 3: Packaged Executable (No Node.js required)
