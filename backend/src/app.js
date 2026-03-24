@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// 查找 public 目录
+// Find public directory / 查找 public 目录
 function findPublicPath() {
   const possiblePaths = [
     path.join(__dirname, '../../public'),
@@ -25,7 +25,7 @@ function findPublicPath() {
 
   for (const p of possiblePaths) {
     if (fs.existsSync(p) && fs.existsSync(path.join(p, 'index.html'))) {
-      console.log(`找到 public 目录: ${p}`);
+      console.log(`Found public directory: ${p}`);
       return p;
     }
   }
@@ -35,20 +35,20 @@ function findPublicPath() {
 const publicPath = findPublicPath();
 console.log('publicPath:', publicPath);
 
-// 调试：打印所有请求
+// Debug: log all requests / 调试：打印所有请求
 app.use((req, res, next) => {
   console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
   next();
 });
 
-// 根路由 - 必须在 API 路由之前定义！
+// Root route - must be defined before API routes / 根路由 - 必须在 API 路由之前定义！
 if (publicPath) {
   app.get('/', (req, res) => {
-    console.log('处理根路由 /，返回 index.html');
+    console.log('Handling root route /, returning index.html');
     res.sendFile(path.join(publicPath, 'index.html'));
   });
-  
-  // 静态文件
+
+  // Static files / 静态文件
   app.use(express.static(publicPath, { index: false }));
 } else {
   app.get('/', (_req, res) => {
@@ -56,13 +56,13 @@ if (publicPath) {
   });
 }
 
-// API 路由
+// API routes / API 路由
 app.use('/api/vasp-vdw', vaspVdwRoute);
 
-// 调试：检查是否有其他路由处理了 /
+// Debug: check if other routes handled / / 调试：检查是否有其他路由处理了 /
 app.use((req, res, next) => {
   if (req.url === '/') {
-    console.log('警告: 根路由 / 未被前面的中间件处理');
+    console.log('Warning: Root route / was not handled by previous middleware');
   }
   next();
 });
