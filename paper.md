@@ -11,10 +11,10 @@ tags:
   - vdW-DF
   - rVV10
 authors:
-  - name: VASP vdw Replacer Contributors
+  - name: haiw201
     affiliation: 1
 affiliations:
-  - name: Computational Materials Science Community
+  - name: Tongji University
     index: 1
 date: 24 March 2026
 bibliography: paper.bib

@@ -4,10 +4,10 @@ type: software
 title: "VASP vdw Replacer"
 abstract: "A web-based and CLI tool for adding van der Waals correction functionals to VASP INCAR files. Supports 25+ vdw methods including DFT-D2, DFT-D3, DFT-D4, Tkatchenko-Scheffler, MBD, vdW-DF family, and rVV10 family."
 authors:
-  - name: "VASP vdw Replacer Contributors"
-    affiliation: "Computational Materials Science Community"
-repository-code: "https://github.com/username/vasp-vdw-replacer"
-url: "https://github.com/username/vasp-vdw-replacer"
+  - name: "haiw201"
+    affiliation: "Tongji University"
+repository-code: "https://github.com/haiw201/vasp-vdw-replacer"
+url: "https://github.com/haiw201/vasp-vdw-replacer"
 license: MIT
 version: "1.0.0"
 date-released: "2026-03-24"
@@ -35,11 +35,11 @@ preferred-citation:
   type: software
   title: "VASP vdw Replacer: A Tool for Adding van der Waals Correction Functionals to VASP INCAR Files"
   authors:
-    - name: "VASP vdw Replacer Contributors"
+    - name: "haiw201"
   year: 2026
   publisher: Zenodo
   doi: "10.XXXX/zenodo.XXXXX"
-  url: "https://github.com/username/vasp-vdw-replacer"
+  url: "https://github.com/haiw201/vasp-vdw-replacer"
 
 # Related references
 references:
