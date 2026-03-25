@@ -156,10 +156,10 @@ PREC = Accurate`);
                 <p><strong>已应用:</strong> {result.vdwType}</p>
                 <p><strong>分类:</strong> {result.vdwCategory}</p>
                 <p><strong>说明:</strong> {result.vdwDescription}</p>
-                {result.changes.added.length > 0 && (
+                {result.changes?.added?.length > 0 && (
                   <p><strong>新增参数:</strong> {result.changes.added.join(', ')}</p>
                 )}
-                {result.changes.removed && result.changes.removed.length > 0 && (
+                {result.changes?.removed && result.changes.removed.length > 0 && (
                   <p><strong>移除参数:</strong> {result.changes.removed.join(', ')}</p>
                 )}
               </div>
